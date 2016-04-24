@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Just a wrapper
+SRC="/home/pedro/Code/diary"
+
+case $1 in 
+"init") $SRC/init_diary.sh;;
+"add") $SRC/new_diary_entry.sh $2;;
+"edit") $SRC/edit_diary_entry.sh $2;;
+esac
